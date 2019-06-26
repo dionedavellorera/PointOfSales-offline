@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/partial_header"
+        android:id="@+id/header"
+        />
+
+
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ROOM"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RATE"
+            />
+
+
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ELAPSED"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DATE IN"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DATE OUT"
+            />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="WAKE UP CALL"
+            />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="REMARKS"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DEPOSIT"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="FNB"
+            />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listRoomData"
+        android:layout_below="@id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:src="@mipmap/baseline_print_black_24"
+        android:tint="@color/colorWhite"
+        android:id="@+id/fab"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@mipmap/baseline_add_circle_outline_black_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

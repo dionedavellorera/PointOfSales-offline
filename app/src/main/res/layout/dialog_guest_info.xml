@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/partial_header" android:id="@+id/header" />
+
+    <LinearLayout
+        android:layout_below="@id/header"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/guestInfoTitle"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GUEST INFORMATION"/>
+
+            <ScrollView
+                android:layout_below="@id/guestInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROOM NUMBER"/>
+
+                    <TextView
+                        android:id="@+id/roomNumberValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROOM NUMBER"/>
+
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROOM TYPE"/>
+
+                    <TextView
+                        android:id="@+id/roomTypeValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROOM TYPE VALUE"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RATE DESCRIPTION"/>
+
+                    <TextView
+                        android:id="@+id/rateDescriptionValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RATE DESCRIPTION VALUE"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RATE AMOUNT"/>
+
+                    <TextView
+                        android:id="@+id/rateAmountValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="RATE AMOUNT VALUE"/>
+
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VEHICLE TYPE"/>
+
+                    <TextView
+                        android:id="@+id/vehicleValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VEHICLE VALUE"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CAR MAKE"/>
+
+                    <TextView
+                        android:id="@+id/carMakeValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CAR MAKE VALUE"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLATE NUMBER"/>
+
+                    <TextView
+                        android:id="@+id/plateNumberValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PLATE NUMBE VALUE"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROOM BOY"/>
+
+                    <TextView
+                        android:id="@+id/roomBoyValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ROOM BOY VALUE"/>
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REMARKS"/>
+
+                    <TextView
+                        android:id="@+id/remarksValue"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="REMARKS VALUE"/>
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/checkinTimeLabel"
+                    android:layout_margin="10dp"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHECK IN TIME"/>
+                <TextView
+                    android:id="@+id/checkInTimeValue"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="03:00 PM"/>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WAKE UP CALL"/>
+                <TextView
+                    android:id="@+id/wakeUpCallValue"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="08:00 PM"/>
+
+
+                <Button
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_selector"
+                    android:id="@+id/changeCheckInTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Check in time"/>
+
+                <Button
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_selector"
+                    android:id="@+id/updateGuestInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHANGE WAKE UP CALL"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

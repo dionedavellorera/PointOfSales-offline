@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/partial_header"
+        android:id="@+id/header"/>
+
+    <android.support.v7.widget.SearchView
+        android:layout_marginRight="55dp"
+        android:layout_below="@id/header"
+        android:id="@+id/searchRate"
+        app:iconifiedByDefault="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/labelQty"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:textColor="@color/colorBlack"
+        android:text="QTY:"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/header"
+        android:layout_toLeftOf="@id/qty"/>
+
+
+    <Spinner
+        android:layout_alignParentRight="true"
+        android:spinnerMode="dialog"
+        android:layout_below="@id/header"
+        android:gravity="center"
+        android:layout_toRightOf="@id/searchRate"
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"/>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/searchRate"
+        android:id="@+id/listRates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Spinner
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:id="@+id/rateSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_below="@id/rateSpinner"
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE RATE"/>
+
+
+</RelativeLayout>
